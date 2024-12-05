@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        .header {
+            background-image: url('db11cbffed3a6e8d364452a71d481ed8_enhanced_enhanced.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 80px 20px;
+            color: #fff;
+            position: relative;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 4px solid #819791;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .roll-no {
+            font-size: 1.5em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+         /* Navigation Links */
+         .nav-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            font-size: 0.8em;
+        }
+
+        .nav-links a {
+            padding: 6px 9px;
+            background-color: #e0e0e0;
+            color: #555;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 1.5em;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            color: #869687;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #f7f6f6;
+        }
+
+        .assignment {
+            padding: 40px 20px;
+            background-color: #e5e5e5;
+            text-align: center;
+        }
+
+        .assignment h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 8px 15px;
+            background-color: #d3dbd1;
+            color: #555;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #77887e;
+            color: #fff;
+        }
+
+        #video-frame {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 20px;
+        }
+
+        .contact {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            font-size: 2em;
+            color: #333;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #87cefa;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            #video-frame {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <div class="profile-photo">
+                <img src="WhatsApp Image 2024-11-13 at 15.35.27.jpeg" alt="Profile Photo">
+            </div>
+            <div class="name">Payal Meena</div>
+            <div class="roll-no">Roll No: IT-2K22-31</div>
+            <nav class="nav-links">
+                <a href="assignmentpage.html" target="_blank">Assignments</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a 3rd year student, currently pursuing Integrated MTech IT degree from IIPS (DAVV) , INDORE 
+        </p>
+    </div>
+
+    <div class="assignment">
+        <h2>Assignments</h2>
+        <div class="tabs">
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/qLaYxHjPHQ0?si=_cHQju3L7WMBYkwI')">Assignment 1</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/NsNw4G1EHzo?si=uti8YtbsE9KlWgP7')">Assignment 2</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/8O1zRm8M-lU?si=lmXg3a9eWxcDLlOt')">Assignment 3</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/wBt8t4rfPTE?si=9dyzQFSNG66yX73Y')">Assignment 4</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/6ZZVGsS4SkM?si=_obcMl-7tghqC7cN')">Assignment 5</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/BtecenFHJ8o?si=FyJZp5o3g-Ipv-Ia')">Assignment 6</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/VIDEO_ID7')">Assignment 7</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/VIDEO_ID1')">Assignment 8</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/VIDEO_ID1')">Assignment 9</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/VIDEO_ID1')">Assignment 10</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/VIDEO_ID1')">Assignment 11</div>
+            <div class="tab" onclick="loadVideo('https://www.youtube.com/embed/VIDEO_ID1')">Assignment 12</div>
+        </div>
+        <iframe id="video-frame" src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/payal-meena-231796272" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/payalllll" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Payal Meena. All rights reserved.
+    </div>
+
+    <script>
+        function loadVideo(url) {
+            document.getElementById('video-frame').src = url;
+        }
+    </script>
+
+</body>
+</html>
